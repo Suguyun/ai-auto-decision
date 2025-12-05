@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI 自动决策系统
 
 本系统是一个基于大语言模型的自动决策系统，能够监控系统指标并在必要时自动调整配置。
@@ -76,3 +77,7 @@ docker-compose up --build
 - Go 1.24.5
 - github.com/mark3labs/mcp-go v0.43.2
 - github.com/sashabaranov/go-openai v1.41.2
+=======
+# ai-auto-decision
+本系统是一个基于大语言模型的自动决策系统，能够监控系统指标并在必要时自动调整配置。
+>>>>>>> ca8fac34e11b53eaffbefa6e23dd335b901facf8
