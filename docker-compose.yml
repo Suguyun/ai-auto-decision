@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.mcp
+    ports:
+      - "9001:9001"
+    volumes:
+      - ./config.json:/root/config.json
+
+  agent:
+    build:
+      context: .
+      dockerfile: Dockerfile.agent
+    depends_on:
+      - mcp-server
+    environment:
+      - LLM_API_KEY=${LLM_API_KEY}
+    volumes:
+      - ./config.json:/root/config.json
