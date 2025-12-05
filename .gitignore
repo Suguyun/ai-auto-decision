@@ -25,17 +25,13 @@ go.work
 .idea/
 .vscode/
 
-# Temporary files
-*~
-*#
-
 # macOS
 .DS_Store
 
 # Build outputs
 *.bin
-agent
-mcp-server
+/agent
+/mcp-server
 
 # Logs
 *.log
