@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+*.app
 
 # Test binary, built with `go test -c`
 *.test
@@ -24,6 +25,23 @@ go.work
 .idea/
 .vscode/
 
+# Temporary files
+*~
+*#
+
+# macOS
+.DS_Store
+
 # Build outputs
+*.bin
 agent
 mcp-server
+
+# Logs
+*.log
+
+# Docker
+.dockerignore
+
+# Project specific
+config.json.local
